@@ -1,0 +1,140 @@
+.inline-block {
+    display: inline-block; 
+    vertical-align: top;
+    margin-left: 1em;   
+}
+
+.logo {
+width: 73%;
+padding: 1%;
+text-align: center;
+}
+
+.maincontent{
+    max-width: 1300px;
+    margin: auto;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+}
+ 
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroimg{
+    height: 800px;
+    width:400px;
+    padding:0px;
+    margin:0 auto;
+    }
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "DHScard" "umamicard";
+    text-align: center;
+    padding:0%;
+}
+
+
+    .dhs{
+        width: 500px;
+        height:auto;
+        padding: 0%;
+        }
+    
+
+    .umami{
+        width: 300px;
+        height: auto;
+        padding: 0%;
+    }
+
+
+    p{
+        padding: 0%;
+    }
+
+    .button{
+        background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    }
+
+    .myWork{
+        margin:auto;
+    }
+
+ .flexcontainer{ 
+ columns: 3;
+ justify-content: space-evenly;
+ display: flex;
+ padding: 3%;
+ flex-direction: row;
+ }
+ 
+ .umamicard{
+    grid-area: umamicard;
+ }
+
+ .DHScard{
+    grid-area: DHScard;
+    margin-bottom: 20px;
+ }
+
+ h2 {
+    text-align: center;
+    padding: 0px;
+    text-decoration:underline;
+ }
+
+ .row            { 
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+  }
+
+footer {
+    background-color: #373738;
+    text-align: center; 
+    }
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li {
+    text-align: center;
+    color: white; 
+   width: 7em; 
+}
+@media only screen and (max-width: 600px) {
+    .flexcontainer{ 
+        flex-direction: column;
+        }
+
+        .box {
+            width: 100%;
+            justify-content: center;
+     }
+
+     .heroimg{
+        width: 100%;
+        justify-content: center;
+     }
+     .maincontent{
+        width: 100%;
+        margin: auto;
+    }
+
+      
+}
